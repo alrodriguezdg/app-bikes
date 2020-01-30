@@ -479,14 +479,38 @@ img{
 	display: block;
 }
 
-.begin-campaing{
+.start-campaing{
+	background-color: #fe342c;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.logo-campaing{
+	text-align: center;
+}
+
+.logo-campaing img{
+	max-width: 200px;
+}
+
+.begin-campaing, .logo-campaing{
 	background-color: #fff;
 }
 
 .begin-campaing .column{
-	width: 30%;
+	width: 49%;
 	display: inline-block;
 	vertical-align: top;
+	padding: 5px;
+}
+
+.begin-campaing .column-full{
+	width: 100%;
 	padding: 5px;
 }
 
