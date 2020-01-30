@@ -133,7 +133,69 @@
 		        </div>
 		    </div>
 	    <div class="content-button">
-		    <a class="ui button stop-activity" href="#">DETENER RECORRIDO</a>
+		    <a class="ui button stop-activity" onclick="stop()">DETENER RECORRIDO</a>
+		</div>
+		<div class="ui modal">
+		  <div class="chrono">
+		  	<h2>TUS RESULTADOS</h2>
+		  	<div class="ui divided grid chrono">
+		        <div class="row">
+		          <div class="four wide column">
+		          	<h4>Tiempo Recorrido</h4>
+		          </div>
+		          <div class="ten wide column">
+		          	<h2>00:40:20</h2>
+		          </div>
+		        </div>
+		        <div class="row">
+		          <div class="four wide column">
+		          	<h4>Punto de Inicio</h4>
+		          </div>
+		          <div class="ten wide column">
+		          	<h3>Calle 72 # 15 - 24</h3>
+		          </div>
+		        </div>
+		      </div>
+		      <hr class="degrade-orange" style="height: 5px; width: 100%; border: 0; margin-top: 30px;">
+		      <div class="ui grid" style="text-align: center; padding: 20px;">
+			        <div class="column data-rute degrade-green">
+			        	<i class="icon-stats-dots"></i>
+			        </div>
+			        <div class="column data-rute">
+			        	<h2>
+			        		$19.200
+			        	</h2>
+			        </div>
+			        <div class="column data-rute degrade-orange">
+			        	<i class="icon-map"></i>
+			        </div>
+			        <div class="column data-rute">
+			        	<h2>
+			        		200<small>KM</small>
+			        	</h2>
+			        </div>
+			        <div class="column data-rute degrade-blue">
+			        	<i class="icon-heart"></i>
+			        </div>
+			        <div class="column data-rute">
+			        	<h2>
+			        		20<small>Kcal</small>
+			        	</h2>
+			        </div>
+			        <div class="column data-rute degrade-violet">
+			        	<i class="icon-stats-bars"></i>
+			        </div>
+			        <div class="column data-rute">
+			        	<h2>
+			        		Bancolombia
+			        	</h2>
+			        </div>
+			    </div>
+	  		</div>
+		  <div class="actions" style="text-align: center;">
+		    <a class="ui approve button" style="width: 100%; margin: 0 0 10px; display: inline-block; background-color: #e6de00; color: #001434;" onclick="resume()">Reanudar Actividad</a>
+		    <a class="ui cancel button" style="width: 100%; margin: 0 0 10px; display: inline-block; background-color: #fe342c; color: #fff;" onclick="reset()">Finalizar Actividad</a>
+		  </div>
 		</div>
 	</div>
 </body>
@@ -144,6 +206,12 @@
 <script type="text/javascript" src="../js/semantic.min.js"></script>
 
 <script type="text/javascript">
+
+function stop() { 
+        $('.ui.modal')
+		  .modal('show')
+		;
+        }     
 function mostrar() {
     document.getElementById("sidebar-menu").style.width = "300px";
     document.getElementById("main-wrapper").style.left = "300px";

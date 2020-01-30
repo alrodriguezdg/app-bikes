@@ -598,6 +598,10 @@ img{
 	font-weight: lighter;
 }
 
+.info-profile h2{
+	color: #e6de00;
+}
+
 .data-profile.ui.grid>.column:not(.row), .data-profile.ui.grid>.row>.column{
 	width: 100% !important;
 }
@@ -614,11 +618,17 @@ img{
 	font-weight: lighter;
 }
 
-.data-profile.ui.grid>.column input::placeholder{
+.data-profile.ui.grid>.column input, .data-profile.ui.grid>.column input::placeholder, .data-profile.ui.grid>.column select option:not(:checked){
 	font-size: 20px;
 	color: #fff;
 }
 
-.data-profile.ui.grid>.column input{
+.data-profile.ui.grid>.column input, .data-profile.ui.grid>.column select{
 	opacity: 1 !important;
+}
+
+.chrono{
+	background-color: #001434;
+	padding: 20px;
+	margin: 0 !important;
 }
