@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EkoBike - En bici creamos un mundo mejor</title>
+	<link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/ekobike.css">
+</head>
+<body class="inside-app">
+	<div class="main-wrapper">
+		<div class="logo-ekobike-in">
+			<a href="../index.html">
+				<img src="../img/logo-ekobike.png">
+			</a>			
+		</div>
+		<div class="ui bottom attached tab segment active" data-tab="first">
+		  <div class="content-profile">
+			<div class="profile-photo">
+				<ul>
+					<li><hr></li>
+					<li class="content-photo"><img src="../img/profile-photo.png"></li>
+					<li><hr></li>
+				</ul>
+			</div>
+			<div class="info-profile">
+				<h2>Juan Goméz</h2>
+				<h4>Usuario: 1014222356</h4>
+				<div class="data-profile ui two column grid">
+					<div class="column">
+						<form class="ui form">
+						  <div class="field">
+						    <h4>Correo Electrónico</h4>
+						    <input type="text" name="first-name" placeholder="juan1014@gmail.com" disabled="true">
+						  </div>
+						</form>
+					</div>
+					<div class="column">
+						<form class="ui form">
+						  <div class="field">
+						    <h4>Empresa</h4>
+						    <input type="text" name="first-name" placeholder="Bancolombia" disabled="true">
+						  </div>
+						</form>
+					</div>
+				</div>
+				<div class="prize-profile">
+					<h4>
+						Último Reconocimientos
+					</h4>
+					<div class="prize-content">
+						<ul>
+							<li>
+								<i class="icon-tools-2"></i>
+								Mantenimiento
+							</li>
+							<li>
+								<i class="icon-basket"></i>
+								Mercado
+							</li>
+							<li>
+								<i class="icon-briefcase"></i>
+								Viaje
+							</li>
+						</ul>
+						
+					</div>	
+				</div>
+				<button class="ui right floated button btn-yellow" type="submit">Editar Perfil</button>
+			</div>
+			<div class="content-activity ui two column grid">
+				<div class="column">
+					<h4>
+						Total de Kilometros Recorridos
+					</h4>
+					<div class="data-activity">
+						<h3>
+						300
+						</h3>
+						<h5>Kms</h5>
+					</div>
+					
+				</div>
+				<div class="column">
+					<h4>
+						Total de Calorías Consumidas
+					</h4>
+					<div class="data-activity">
+						<h3>
+						1050
+						</h3>
+						<h5>Kcal</h5>
+					</div>
+				</div>
+				<div class="column">
+					<h4>
+						Total de CO2 Reducido
+					</h4>
+					<div class="data-activity">
+						<h3>
+							105
+						</h3>
+						<h5>Kgr</h5>
+					</div>
+				</div>
+				<div class="column">
+					<h4>
+						Tiempo total de actividad 
+					</h4>
+					<div class="data-activity">
+						<h3>
+							1250
+						</h3>
+						<h5>Mins</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="ui bottom attached tab segment" data-tab="second">
+			<h2 class="title-section"><i class="icon-trophy"></i>Reconocimientos</h2>
+			<div class="prize-content">
+				<ul>
+					<li>
+						<i class="icon-tools-2"></i>
+						Mantenimiento
+					</li>
+					<li>
+						<i class="icon-basket"></i>
+						Mercado
+					</li>
+					<li>
+						<i class="icon-briefcase"></i>
+						Viaje
+					</li>
+					<li>
+						<i class="icon-bike"></i>
+						Nueva bici
+					</li>
+				</ul>
+			</div>	
+			<div class="prize-content another">
+			<h3>Otros Reconocimientos <small><a href="#">¿Cómo obtenerlos?</a></small></h3>
+				<ul>
+					<li>
+						<i class="icon-tools-2"></i>
+						Mantenimiento
+					</li>
+					<li>
+						<i class="icon-basket"></i>
+						Mercado
+					</li>
+					<li>
+						<i class="icon-briefcase"></i>
+						Viaje
+					</li>
+					<li>
+						<i class="icon-bike"></i>
+						Nueva bici
+					</li>
+					<li>
+						<i class="icon-tools-2"></i>
+						Mantenimiento
+					</li>
+					<li>
+						<i class="icon-basket"></i>
+						Mercado
+					</li>
+					<li>
+						<i class="icon-briefcase"></i>
+						Viaje
+					</li>
+					<li>
+						<i class="icon-bike"></i>
+						Nueva bici
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="ui bottom attached tab segment" data-tab="third">
+		  	<h2 class="title-section"><i class="icon-linegraph"></i>Histórico</h2>
+		  	<div class="ui form date-historic">
+			  	<div>
+			    	<div class="field">
+			      		<label>Inicio</label>
+			      		<div class="ui calendar" id="rangestart">
+			        		<div class="ui input">
+			          			<input type="text" placeholder="18 Ene 2020">
+			        		</div>
+			      		</div>
+			   		</div>
+			    	<div class="field">
+			     		<label>Fin</label>
+			      		<div class="ui calendar" id="rangeend">
+			        		<div class="ui input">
+			          			<input type="text" placeholder="20 Ene 2020">
+			        		</div>
+			      		</div>
+			    	</div>
+			 	</div>
+			</div>
+			<div class="ui internally celled grid historic">
+		        <div class="row">
+		          	<div class="six wide column">
+		          		<h4>Kilometros Recorridos</h4>
+		          	</div>
+		          	<div class="ten wide column">
+		          		<div class="ui violet progress">
+						  <div class="bar" style="transition-duration: 300ms; display: block; width: 90%; height: 20px;"></div>
+						</div>
+		          	</div>
+			    </div>
+		        <div class="row">
+		          	<div class="six wide column">
+		          		<h4>CO2 Reducido</h4>
+		          	</div>
+		          	<div class="ten wide column">
+		          		<div class="ui yellow progress" data-percent="60">
+					 		<div class="bar" style="transition-duration: 300ms; display: block; width: 60%; height: 20px;"></div>
+						</div>
+		          	</div>
+		        </div>
+		        <div class="row">
+		          	<div class="six wide column">
+		          		<h4>Consumo de Calorías</h4>
+		          	</div>
+		          	<div class="ten wide column">
+		          		<div class="ui orange progress">
+					  	<div class="bar" style="transition-duration: 300ms; display: block; width: 80%; height: 20px;"></div>
+						</div>
+		          	</div>
+		        </div>
+		        <div class="row">
+		          	<div class="six wide column">
+		          		<h4>Tiempo Recorrido</h4>
+		          	</div>
+		          	<div class="ten wide column">
+		          		<div class="ui blue progress">
+					  	<div class="bar" style="transition-duration: 300ms; display: block; width: 50%; height: 20px;"></div>
+						</div>
+		          	</div>
+		        </div>
+		        <div class="row">
+		          	<div class="six wide column">
+		          		<h4>Velocidad Máxima</h4>
+		          	</div>
+		          	<div class="ten wide column">
+		          		<div class="ui white progress">
+					  	<div class="bar" style="transition-duration: 300ms; display: block; width: 60%; height: 20px;"></div>
+						</div>
+		          	</div>
+		        </div>
+		    </div>
+		</div>
+		<div class="ui bottom attached tab segment" data-tab="fourth">
+		  	<div class="content-map">
+		  		<div class="ui grid content-play">
+			  		<div class="column distance">
+			  			<h5>Distancia Recorrida</h5>
+			  			<h3 id="km">0</h3>
+			  			<h4>Km</h4>
+			  		</div>
+		  		</div>
+		  		<div class="map">
+		  			<img src="../img/map-app-30.png">
+		  		</div>
+		  		<div class="chrono">
+		  			<div class="time-elapsed">
+		  				<h4>
+		  					Tiempo Recorrido
+		  				</h4>
+		  				<h2 id="time">
+		  					00:00:00
+		  				</h2>
+		  			</div>
+		  			<div class="calories-co2">
+		  				<div class="calories">
+		  					<h4>
+		  						Consumo de Calorías
+		  					</h4>
+		  					<h2>
+		  						0
+		  					</h2>
+		  					<h5>
+		  						Kcal
+		  					</h5>
+		  				</div>
+		  				<div class="co2">
+		  					<h4>
+		  						CO2 Reducido
+		  					</h4>
+		  					<h2>
+		  						0
+		  					</h2>
+		  					<h5>
+		  						Kgr
+		  					</h5>
+		  				</div>
+		  			</div>
+		  			<div class="max-speed">
+		  				<h4>
+		  					Velocidad Máxima
+		  				</h4>
+		  				<h2>
+		  					0
+		  				</h2>
+		  				<h5>
+		  					Km/h
+		  				</h5>
+		  			</div>
+		  		</div>
+		  		
+
+		  	</div>
+		</div>
+	</div>
+	<div class="menu menu-ekobike">
+		<ul>
+			<li>
+				<a class="item active" data-tab="first">
+					<i class="icon-profile-male"></i>
+				</a>
+			</li>
+			<li>
+				<a class="item" data-tab="second">
+					<i class="icon-trophy"></i>
+				</a>
+			</li>
+			<li>
+				<a id="start" class="item" data-tab="fourth" onclick="start(), setInterval('sumarkm()',4000)">
+	  				<img src="../img/button-start-29.png">
+	  			</a>
+	  			<a id="stop"  class="item" data-tab="fourth" onclick="stop(), clearInterval('sumarkm()', 0)" style="display: none;">
+	  				<img src="../img/button-stop-29.png">
+	  			</a>
+			</li>
+			<li>
+				<a class="item" data-tab="third">
+					<i class="icon-linegraph"></i>
+				</a>
+			</li>
+			<li>
+				<a class="item" data-tab="fourth">
+					<i class="icon-map"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="ui modal">
+		  <div class="chrono">
+		  	<h2>TUS RESULTADOS</h2>
+	  			<div class="ui grid content-play">
+			  		<div class="column distance">
+			  			<h5>Distancia Recorrida</h5>
+			  			<h3>0</h3>
+			  			<h4>Km</h4>
+			  		</div>
+		  		</div>
+	  			<div class="time-elapsed">
+	  				<h4>
+	  					Tiempo Recorrido
+	  				</h4>
+	  				<h2 id="time">
+	  					00:00:00
+	  				</h2>
+	  			</div>
+	  			<div class="calories-co2">
+	  				<div class="calories">
+	  					<h4>
+	  						Consumo de Calorías
+	  					</h4>
+	  					<h2>
+	  						0
+	  					</h2>
+	  					<h5>
+	  						Kcal
+	  					</h5>
+	  				</div>
+	  				<div class="co2">
+	  					<h4>
+	  						CO2 Reducido
+	  					</h4>
+	  					<h2>
+	  						0
+	  					</h2>
+	  					<h5>
+	  						Kgr
+	  					</h5>
+	  				</div>
+	  			</div>
+	  			<div class="max-speed">
+	  				<h4>
+	  					Velocidad Máxima
+	  				</h4>
+	  				<h2>
+	  					0
+	  				</h2>
+	  				<h5>
+	  					Km/h
+	  				</h5>
+	  			</div>
+	  		</div>
+		  <div class="actions" style="text-align: center;">
+		    <a class="ui approve button" style="display: inline-block; background-color: #b39f40; color: #fff;" onclick="resume()">Reanudar Actividad</a>
+		    <a class="ui cancel button" style="display: inline-block; background-color: #b30a3c; color: #fff;" onclick="reset()">Finalizar Actividad</a>
+		  </div>
+		</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>
+<script src="https://jqueryui.com/jquery-wp-content/themes/jquery/js/plugins.js"></script>
+<script src="https://jqueryui.com/jquery-wp-content/themes/jquery/js/main.js"></script>
+
+<script type="text/javascript" src="../js/semantic.min.js"></script>
+
+<script type="text/javascript">
+$('.menu .item')
+  .tab()
+;
+
+$( '.item' ).click(function(){
+	  $('.tab.active')
+	  .transition('pulse')
+	;
+});
+
+window.onload = function() {
+   pantalla = document.getElementById("time");
+   kmh = document.getElementById("kmh");
+   calorias = document.getElementById("calorias");
+   co2 = document.getElementById("co2");
+   maxspeed = document.getElementById("maxspeed");
+}
+var isMarch = false; 
+var acumularTime = 0;
+var km = 0;
+function start () {
+         if (isMarch == false) { 
+            timeInicial = new Date();
+            control = setInterval(cronometro,10);
+            isMarch = true;
+            document.getElementById("start").style.display = 'none';
+            document.getElementById("stop").style.display = 'block';
+            }
+         }
+var variable1 = 100;
+function sumar() {
+  variable1 += 0;
+  // mostrar el valor de variable1
+  document.getElementById('valor').setInterval(1000);
+  document.getElementById('valor').innerHTML = variable1;
+  document.getElementById('redondearvalor').innerHTML = Math.round(variable1*1)/10;
+}
+
+function cronometro () { 
+         timeActual = new Date();
+         acumularTime = timeActual - timeInicial;
+         acumularTime2 = new Date();
+         acumularTime2.setTime(acumularTime); 
+         cc = Math.round(acumularTime2.getMilliseconds()/10);
+         ss = acumularTime2.getSeconds();
+         mm = acumularTime2.getMinutes();
+         hh = acumularTime2.getHours()-19;
+         if (cc < 10) {cc = "0"+cc;}
+         if (ss < 10) {ss = "0"+ss;} 
+         if (mm < 10) {mm = "0"+mm;}
+         if (hh < 10) {hh = "0"+hh;}
+         pantalla.innerHTML = hh+":"+mm+":"+ss+":"+cc;
+         }
+
+function stop () { 
+         if (isMarch == true) {
+            clearInterval(control);
+            isMarch = false;
+            document.getElementById("start").style.display = 'block';
+            document.getElementById("stop").style.display = 'none';
+            $('.ui.modal')
+			  .modal('show')
+			;
+            }     
+         }      
+
+function resume () {
+         if (isMarch == false) {
+            timeActu2 = new Date();
+            timeActu2 = timeActu2.getTime();
+            acumularResume = timeActu2-acumularTime;
+            
+            timeInicial.setTime(acumularResume);
+            control = setInterval(cronometro,10);
+            isMarch = true;
+            document.getElementById("start").style.display = 'none';
+            document.getElementById("stop").style.display = 'block';
+            }     
+         }
+
+function reset () {
+         if (isMarch == true) {
+            clearInterval(control);
+            isMarch = false;
+            }
+         acumularTime = 0;
+         pantalla.innerHTML = "00:00:00:00";
+         }
+	var km = 0;
+	function sumarkm() {
+	setInterval(3000);
+	  km += .1;
+	  // mostrar el valor de km
+	document.getElementById('km').innerHTML = Math.round(km*10)/10;
+	}
+
+</script>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+  	@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+  	h1, h2, h3, h4, h5, h6, p, a, li, input, button{
+		font-family: 'Roboto', sans-serif !important;
+	}
+
+	a{
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 20px;
+		max-width: 300px;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+  	html, body{
+	  height: 100%;
+	  background-color: #000;
+	  padding: 0;
+	  margin: 0;
+	}
+
+	.contenedor-ekobike, .contenedor-publibike{
+		display:flex;
+		flex-direction: column;
+	}
+
+	.contenedor {
+	  display:flex;
+	  flex-direction: column;
+	  text-align: center;
+	}
+
+	.contenedor-ekobike img, .contenedor-publibike img{
+		max-width: 180px;
+		padding: 50px;
+		margin-top: 10%;
+	}
+	.contenedor-ekobike{
+		background: url(img/background-ekobike.jpg) no-repeat;
+		background-size: cover !important;
+		background-attachment: fixed;
+		background-color: #003322;
+		padding: 0px;
+		position: absolute;
+		height: 50%;
+		max-height: 50%;
+		width: 100%;
+	}
+	.contenedor-publibike a{
+		background-color: #e6de00;
+		padding: 10px 20px;
+		color: #001434;
+	}
+	.contenedor-ekobike a{
+		background-color: #b39f40;
+		padding: 10px 20px;
+		color: #fff;
+		border-radius: 50px;
+	}
+	.contenedor-publibike{
+		background: url(img/background-publibike.jpg) no-repeat;
+		background-size: cover !important;
+		background-attachment: fixed;
+		background-color: #003322;
+		padding: 0px;
+		position: absolute;
+		height: 50%;
+		max-height: 50%;
+		width: 100%;
+		top: 50%;
+	}
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ekobike - Publibike</title>
+</head>
+<body>
+	<div class="contenedor">
+		 <div class="contenedor-ekobike">
+		   	<div class="logo-ekobike">
+				<img src="img/logo-ekobike.png">
+			</div>
+			<a href="ekobike">VER APP</a>
+		</div>
+		<div class="contenedor-publibike">
+		   	<div class="logo-publibike">
+				<img src="img/logo-publibike.png">
+			</div>
+			<a href="publibike">VER APP</a>
+		</div>
+		
+	</div>
+		
+</body>
+</html>

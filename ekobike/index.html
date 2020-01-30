@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EkoBike - En bici creamos un mundo mejor</title>
+	<link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/ekobike.css">
+</head>
+<body>
+	<div class="main-wrapper">
+		<div class="logo-ekobike">
+			<a href="../index.html">
+				<img src="../img/logo-ekobike.png">
+			</a>
+		</div>
+
+		<div class="form-login">
+			<form class="ui form">
+			  <div class="field">
+			    <input type="text" name="user" id="user" placeholder="Ingresa tu usuario">
+			  </div>
+			  <a class="ui button" onclick="validateUser()">Ingresar</a>
+			  <p id="alertUser"></p>
+			</form>
+		</div>
+
+		<div class="footer-main">
+			<img class="slogan-ekobike" src="../img/slogan-ekobike.png">
+			<div class="animation-bike">
+				<div class="biker">
+					<img src="../img/biker-ekobike.png">
+				</div>
+			</div>
+			<hr>
+		</div>
+	</div>
+</body>
+
+<script>
+function validateUser() {
+  var x, text;
+
+  x = document.getElementById("user").value;
+
+  if (x = "userbike") {
+    window.location.replace("profile.html");
+  } else {
+    text = "Usuario no Válido";
+  }
+  document.getElementById("alertUser").innerHTML = text;
+}
+</script>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Publibike</title>
+	<link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/publibike.css">
+</head>
+<body class="inside-app">
+	<div id="sidebar-menu">
+		<ul>
+			<li><img class="logo-publibike" src="../img/logo-publibike-dark.png"></li>
+			<li>
+				<a href="main.html">
+					<i class="icon-home3"></i>Inicio</li>
+				</a>
+			<li>
+				<a href="profile.html">
+					<i class="icon-user"></i>Mi Perfil</li>
+				</a>
+			<li>
+				<a href="campaings.html">
+					<i class="icon-stats-bars"></i>Campañas</li>
+				</a>
+			<li>
+				<a href="rutes.html">
+					<i class="icon-map"></i>Mis Recorridos</li>
+				</a>
+			<li>
+				<a href="#">
+					<i class="icon-lock"></i>Cambiar Contraseña</li>
+				</a>
+			<li>
+				<a href="index.html">
+					<i class="icon-switch"></i>Cerrar Sesión</li>
+				</a>
+		</ul>
+	</div>
+	<div class="main-wrapper" id="main-wrapper">
+		<div class="header-inside">
+			<ul>
+				<li>
+					<a href=" #">
+						<a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()">
+					        <i class="icon-menu"></i>
+					    </a>
+					    <a id="cerrar" class="abrir-cerrar" href="javascript:void(0)" onclick="ocultar()">
+					        <i class="icon-cross"></i>
+					    </a>
+					</a>
+				</li>
+				<li class="logo-publibike-in">
+					<img class="logo-publibike" src="../img/logo-publibike.png">
+				</li>
+				<li>
+					<i class="icon-search"></i>
+				</li>
+			</ul>
+		</div>
+		<div class="map">
+  			<img src="../img/map-app-30.png">
+  		</div>
+  		<div class="degrade-green" style="height: 5px; width: 100%; margin-top: -4px;">
+  		</div>
+  		<div class="ui divided grid chrono">
+	        <div class="row">
+	          <div class="four wide column">
+	          	<h4>Tiempo Recorrido</h4>
+	          </div>
+	          <div class="ten wide column">
+	          	<h2>00:40:20</h2>
+	          </div>
+	        </div>
+	        <div class="row">
+	          <div class="four wide column">
+	          	<h4>Punto de Inicio</h4>
+	          </div>
+	          <div class="ten wide column">
+	          	<h3>Calle 72 # 15 - 24</h3>
+	          </div>
+	        </div>
+	      </div>
+	      <hr class="degrade-orange" style="height: 5px; width: 100%; border: 0; margin-top: 30px;">
+	      <div class="ui grid" style="text-align: center; padding: 20px;">
+		        <div class="column data-rute degrade-green">
+		        	<i class="icon-stats-dots"></i>
+		        	<h4>
+		        		Estás Generado
+		        	</h4>
+		        </div>
+		        <div class="column data-rute">
+		        	<h2>
+		        		$19.200
+		        	</h2>
+		        </div>
+		        <div class="column data-rute degrade-orange">
+		        	<i class="icon-map"></i>
+		        	<h4>
+		        		Has Recorrido
+		        	</h4>
+		        </div>
+		        <div class="column data-rute">
+		        	<h2>
+		        		200<small>KM</small>
+		        	</h2>
+		        </div>
+		        <div class="column data-rute degrade-blue">
+		        	<i class="icon-heart"></i>
+		        	<h4>
+		        		Has Consumido
+		        	</h4>
+		        </div>
+		        <div class="column data-rute">
+		        	<h2>
+		        		20<small>Kcal</small>
+		        	</h2>
+		        </div>
+		        <div class="column data-rute degrade-violet">
+		        	<i class="icon-stats-bars"></i>
+		        	<h4>
+		        		Campaña Actual
+		        	</h4>
+		        </div>
+		        <div class="column data-rute">
+		        	<h2>
+		        		Bancolombia
+		        	</h2>
+		        </div>
+		    </div>
+	    <div class="content-button">
+		    <a class="ui button stop-activity" href="#">DETENER RECORRIDO</a>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>
+<script src="https://jqueryui.com/jquery-wp-content/themes/jquery/js/plugins.js"></script>
+<script src="https://jqueryui.com/jquery-wp-content/themes/jquery/js/main.js"></script>
+
+<script type="text/javascript" src="../js/semantic.min.js"></script>
+
+<script type="text/javascript">
+function mostrar() {
+    document.getElementById("sidebar-menu").style.width = "300px";
+    document.getElementById("main-wrapper").style.left = "300px";
+    document.getElementById("abrir").style.display = "none";
+    document.getElementById("cerrar").style.display = "inline";
+}
+
+function ocultar() {
+    document.getElementById("sidebar-menu").style.width = "0";
+    document.getElementById("main-wrapper").style.left = "0";
+    document.getElementById("abrir").style.display = "inline";
+    document.getElementById("cerrar").style.display = "none";
+}
+
+$('.main-wrapper')
+  .transition('scale')
+;
+
+</script>
+
+</html>

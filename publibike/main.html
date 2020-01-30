@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Publibike</title>
+	<link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/publibike.css">
+</head>
+<body class="inside-app">
+	<div id="sidebar-menu">
+		<ul>
+			<li><img class="logo-publibike" src="../img/logo-publibike-dark.png"></li>
+			<li>
+				<a href="main.html">
+					<i class="icon-home3"></i>Inicio</li>
+				</a>
+			<li>
+				<a href="profile.html">
+					<i class="icon-user"></i>Mi Perfil</li>
+				</a>
+			<li>
+				<a href="campaings.html">
+					<i class="icon-stats-bars"></i>Campañas</li>
+				</a>
+			<li>
+				<a href="rutes.html">
+					<i class="icon-map"></i>Mis Recorridos</li>
+				</a>
+			<li>
+				<a href="#">
+					<i class="icon-lock"></i>Cambiar Contraseña</li>
+				</a>
+			<li>
+				<a href="index.html">
+					<i class="icon-switch"></i>Cerrar Sesión</li>
+				</a>
+		</ul>
+	</div>
+	<div class="main-wrapper" id="main-wrapper">
+		<div class="header-inside">
+			<ul>
+				<li>
+					<a href=" #">
+						<a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()">
+					        <i class="icon-menu"></i>
+					    </a>
+					    <a id="cerrar" class="abrir-cerrar" href="javascript:void(0)" onclick="ocultar()">
+					        <i class="icon-cross"></i>
+					    </a>
+					</a>
+				</li>
+				<li class="logo-publibike-in">
+					<img class="logo-publibike" src="../img/logo-publibike.png">
+				</li>
+				<li>
+					<i class="icon-search"></i>
+				</li>
+			</ul>
+		</div>
+		<div class="welcome-main">
+			<h2>
+				Hola Juan,
+			</h2>
+			<h4>
+				Esta es la información de tu cuenta
+			</h4>
+		</div>
+		<div class="date">
+			<h3>13 de Enero - 18 de Enero <i class="icon-calendar"></i></h3>
+		</div>
+		<div class="ui grid" style="text-align: center; padding: 20px;">
+	        <div class="column data-main degrade-green">
+	        	<i class="icon-stats-dots"></i>
+	        	<h4>
+	        		Ingresos Generados
+	        	</h4>
+	        	<h2>
+	        		$300.000
+	        	</h2>
+	        </div>
+	        <div class="column data-main degrade-orange">
+	        	<i class="icon-map"></i>
+	        	<h4>
+	        		Kilometros Recorridos
+	        	</h4>
+	        	<h2>
+	        		200<small>KM</small>
+	        	</h2></div>
+	        <div class="column data-main degrade-blue">
+	        	<i class="icon-heart"></i>
+	        	<h4>
+	        		Calorías Consumidas
+	        	</h4>
+	        	<h2>
+	        		100<small>Kcal</small>
+	        	</h2>
+	        </div>
+	        <div class="column data-main degrade-violet">
+	        	<i class="icon-stats-bars"></i>
+	        	<h4>
+	        		Campañas Activas
+	        	</h4>
+	        	<h2>
+	        		2
+	        	</h2>
+	        </div>
+	    </div>
+	    <div class="content-button">
+		    <a class="ui button begin-activity" href="campaings.html">INICIAR NUEVO RECORRIDO</a>
+		    <a class="ui button go-campaings" href="campaings.html">VER NUEVAS CAMPAÑAS</a>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>
+<script src="https://jqueryui.com/jquery-wp-content/themes/jquery/js/plugins.js"></script>
+<script src="https://jqueryui.com/jquery-wp-content/themes/jquery/js/main.js"></script>
+
+<script type="text/javascript" src="../js/semantic.min.js"></script>
+
+<script type="text/javascript">
+function mostrar() {
+    document.getElementById("sidebar-menu").style.width = "300px";
+    document.getElementById("main-wrapper").style.left = "300px";
+    document.getElementById("abrir").style.display = "none";
+    document.getElementById("cerrar").style.display = "inline";
+}
+
+function ocultar() {
+    document.getElementById("sidebar-menu").style.width = "0";
+    document.getElementById("main-wrapper").style.left = "0";
+    document.getElementById("abrir").style.display = "inline";
+    document.getElementById("cerrar").style.display = "none";
+}
+
+$('.main-wrapper')
+  .transition('scale')
+;
+
+</script>
+
+</html>

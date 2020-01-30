@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Publibike</title>
+	<link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/publibike.css">
+</head>
+<body class="inside-app">
+	<div id="sidebar-menu">
+		<ul>
+			<li><img class="logo-publibike" src="../img/logo-publibike-dark.png"></li>
+			<li>
+				<a href="main.html">
+					<i class="icon-home3"></i>Inicio</li>
+				</a>
+			<li>
+				<a href="profile.html">
+					<i class="icon-user"></i>Mi Perfil</li>
+				</a>
+			<li>
+				<a href="campaings.html">
+					<i class="icon-stats-bars"></i>Campañas</li>
+				</a>
+			<li>
+				<a href="rutes.html">
+					<i class="icon-map"></i>Mis Recorridos</li>
+				</a>
+			<li>
+				<a href="#">
+					<i class="icon-lock"></i>Cambiar Contraseña</li>
+				</a>
+			<li>
+				<a href="index.html">
+					<i class="icon-switch"></i>Cerrar Sesión</li>
+				</a>
+		</ul>
+	</div>
+	<div class="main-wrapper" id="main-wrapper">
+		<div class="header-inside">
+			<ul>
+				<li>
+					<a href=" #">
+						<a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()">
+					        <i class="icon-menu"></i>
+					    </a>
+					    <a id="cerrar" class="abrir-cerrar" href="javascript:void(0)" onclick="ocultar()">
+					        <i class="icon-cross"></i>
+					    </a>
+					</a>
+				</li>
+				<li class="logo-publibike-in">
+					<img class="logo-publibike" src="../img/logo-publibike.png">
+				</li>
+				<li>
+					<i class="icon-search"></i>
+				</li>
+			</ul>
+		</div>
+  		<div class="title-publibike degrade-orange">
+  			<h2>TUS RECORRIDOS</h2>
+  		</div>
+  		<div class="table-routes">
+  			<div class="table-routes-content">
+	        <div class="row header-table">
+	          <div class="route-column">Fecha</div>
+	          <div class="route-column">Inicio</div>
+	          <div class="route-column">Final</div>
+	          <div class="route-column">Tiempo</div>
+	          <div class="route-column">Kms</div>
+	          <div class="route-column">Ingresos</div>
+	        </div>
+	        <div class="row">
+	          <div class="route-column">20/12/19</div>
+	          <div class="route-column">Cra. 72 # 26-45</div>
+	          <div class="route-column">Cra. 72 # 85-20</div>
+	          <div class="route-column">1h 50mins</div>
+	          <div class="route-column">10</div>
+	          <div class="route-column">$20.000</div>
+	        </div>
+	        <div class="row">
+	          <div class="route-column">15/12/19</div>
+	          <div class="route-column">Cra. 72 # 26-45</div>
+	          <div class="route-column">Cra. 90 #83-20</div>
+	          <div class="route-column">2h 05mins</div>
+	          <div class="route-column">15</div>
+	          <div class="route-column">$30.000</div>
+	        </div>
+	        <div class="row">
+	          <div class="route-column">10/12/19</div>
+	          <div class="route-column">Cra. 72 # 26-45</div>
+	          <div class="route-column">Cra. 93 #20-10</div>
+	          <div class="route-column">1h 10mins</div>
+	          <div class="route-column">6</div>
+	          <div class="route-column">$10.000</div>
+	        </div>
+	        <div class="row">
+	          <div class="route-column">09/12/19</div>
+	          <div class="route-column">Cra. 72 # 26-45</div>
+	          <div class="route-column">Cra. 72 # 85-20</div>
+	          <div class="route-column">1h 50mins</div>
+	          <div class="route-column">10</div>
+	          <div class="route-column">$20.000</div>
+	        </div>
+	        <div class="row">
+	          <div class="route-column">05/12/19</div>
+	          <div class="route-column">Cra. 72 # 26-45</div>
+	          <div class="route-column">Cra. 90 #83-20</div>
+	          <div class="route-column">2h 05mins</div>
+	          <div class="route-column">15</div>
+	          <div class="route-column">$30.000</div>
+	        </div>
+	        <div class="row">
+	          <div class="route-column">04/12/19</div>
+	          <div class="route-column">Cra. 72 # 26-45</div>
+	          <div class="route-column">Cra. 93 #20-10</div>
+	          <div class="route-column">1h 10mins</div>
+	          <div class="route-column">6</div>
+	          <div class="route-column">$10.000</div>
+	        </div>
+	        <div class="row">
+	          <div class="route-column">03/12/19</div>
+	          <div class="route-column">Cra. 72 # 26-45</div>
+	          <div class="route-column">Cra. 72 # 85-20</div>
+	          <div class="route-column">1h 50mins</div>
+	          <div class="route-column">10</div>
+	          <div class="route-column">$20.000</div>
+	        </div>
+	        <div class="row">
+	          <div class="route-column">01/12/19</div>
+	          <div class="route-column">Cra. 72 # 26-45</div>
+	          <div class="route-column">Cra. 90 #83-20</div>
+	          <div class="route-column">2h 05mins</div>
+	          <div class="route-column">15</div>
+	          <div class="route-column">$30.000</div>
+	        </div>
+	        <div class="row">
+	          <div class="route-column">04/12/19</div>
+	          <div class="route-column">Cra. 72 # 26-45</div>
+	          <div class="route-column">Cra. 93 #20-10</div>
+	          <div class="route-column">1h 10mins</div>
+	          <div class="route-column">6</div>
+	          <div class="route-column">$10.000</div>
+	        </div>
+	        <div class="row">
+	          <div class="route-column">03/12/19</div>
+	          <div class="route-column">Cra. 72 # 26-45</div>
+	          <div class="route-column">Cra. 72 # 85-20</div>
+	          <div class="route-column">1h 50mins</div>
+	          <div class="route-column">10</div>
+	          <div class="route-column">$20.000</div>
+	        </div>
+	        <div class="row">
+	          <div class="route-column">01/12/19</div>
+	          <div class="route-column">Cra. 72 # 26-45</div>
+	          <div class="route-column">Cra. 90 #83-20</div>
+	          <div class="route-column">2h 05mins</div>
+	          <div class="route-column">15</div>
+	          <div class="route-column">$30.000</div>
+	        </div>
+	      </div>
+  		</div>
+  		<div class="content-button">
+		    <a class="ui button begin-activity" href="campaings.html">INICIAR NUEVO RECORRIDO</a>
+		    <a class="ui button go-campaings" href="campaings.html">VER NUEVAS CAMPAÑAS</a>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>
+<script src="https://jqueryui.com/jquery-wp-content/themes/jquery/js/plugins.js"></script>
+<script src="https://jqueryui.com/jquery-wp-content/themes/jquery/js/main.js"></script>
+
+<script type="text/javascript" src="../js/semantic.min.js"></script>
+
+<script type="text/javascript">
+function mostrar() {
+    document.getElementById("sidebar-menu").style.width = "300px";
+    document.getElementById("main-wrapper").style.left = "300px";
+    document.getElementById("abrir").style.display = "none";
+    document.getElementById("cerrar").style.display = "inline";
+}
+
+function ocultar() {
+    document.getElementById("sidebar-menu").style.width = "0";
+    document.getElementById("main-wrapper").style.left = "0";
+    document.getElementById("abrir").style.display = "inline";
+    document.getElementById("cerrar").style.display = "none";
+}
+
+$('.main-wrapper')
+  .transition('scale')
+;
+
+</script>
+
+</html>
