@@ -31,7 +31,7 @@
 						<form class="ui form">
 						  <div class="field">
 						    <h4>Correo Electrónico</h4>
-						    <input type="text" name="first-name" placeholder="juan1014@gmail.com" disabled="true">
+						    <input type="email" name="email-user" placeholder="juan1014@gmail.com" disabled="true">
 						  </div>
 						</form>
 					</div>
@@ -39,7 +39,7 @@
 						<form class="ui form">
 						  <div class="field">
 						    <h4>Empresa</h4>
-						    <input type="text" name="first-name" placeholder="Bancolombia" disabled="true">
+						    <input type="text" name="empresa-user" placeholder="Bancolombia" disabled="true">
 						  </div>
 						</form>
 					</div>
@@ -66,7 +66,7 @@
 						
 					</div>	
 				</div>
-				<button class="ui right floated button btn-yellow" type="submit">Editar Perfil</button>
+				<button class="ui right floated button btn-yellow edit-btn" type="submit">Editar Perfil</button>
 			</div>
 			<div class="content-activity ui two column grid">
 				<div class="column">
@@ -508,6 +508,23 @@ function reset () {
 	  // mostrar el valor de km
 	document.getElementById('km').innerHTML = Math.round(km*10)/10;
 	}
+
+// Habilitar edicion perfil
+
+$( document ).on( 'click', '.edit-btn', function(){
+	$( this ).text( 'Guardar Perfil' ).addClass( 'inEdit' );
+  $('[name=email-user], [name=empresa-user]').attr( 'disabled', false );
+  $('[name=email-user], [name=empresa-user]').css( 'border', '1px solid #479946' );
+	$( this ).text( 'Guardar Perfil' ).removeClass( 'edit-btn' );
+	
+});
+
+$( document ).on( 'click', '.inEdit', function(){
+	$( this ).text( 'Guardar Perfil' ).addClass( 'edit-btn' );
+  $('[name=email-user], [name=empresa-user]').attr( 'disabled', true );
+  $('[name=email-user], [name=empresa-user]').css( 'border', '0px' );
+	$( this ).text( 'Editar Perfil' ).removeClass( 'inEdit' );
+});
 
 </script>
 
