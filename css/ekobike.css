@@ -553,3 +553,8 @@ i.icon.play.circle:before{
 .calories-co2 div:first-child{
 	border-right: 1px solid #606060;
 }
+
+.styleDate{
+	color: #FFF !important; 
+	font-weight: 600 !important;
+}

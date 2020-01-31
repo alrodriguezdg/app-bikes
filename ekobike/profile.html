@@ -5,7 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>EkoBike - En bici creamos un mundo mejor</title>
 	<link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/ekobike.css">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.datetimepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/ekobike.css?v=1.0">
+
 </head>
 <body class="inside-app">
 	<div class="main-wrapper">
@@ -185,7 +187,7 @@
 			      		<label>Inicio</label>
 			      		<div class="ui calendar" id="rangestart">
 			        		<div class="ui input">
-			          			<input type="text" placeholder="18 Ene 2020">
+			          			<input type="text" class="styleDate datetime" placeholder="18 Ene 2020">
 			        		</div>
 			      		</div>
 			   		</div>
@@ -193,7 +195,7 @@
 			     		<label>Fin</label>
 			      		<div class="ui calendar" id="rangeend">
 			        		<div class="ui input">
-			          			<input type="text" placeholder="20 Ene 2020">
+			          			<input type="text" class="styleDate datetime" placeholder="20 Ene 2020">
 			        		</div>
 			      		</div>
 			    	</div>
@@ -411,6 +413,7 @@
 <script src="https://jqueryui.com/jquery-wp-content/themes/jquery/js/main.js"></script>
 
 <script type="text/javascript" src="../js/semantic.min.js"></script>
+<script type="text/javascript" src="../js/jquery.datetimepicker.full.min.js"></script>
 
 <script type="text/javascript">
 $('.menu .item')
@@ -524,6 +527,17 @@ $( document ).on( 'click', '.inEdit', function(){
   $('[name=email-user], [name=empresa-user]').attr( 'disabled', true );
   $('[name=email-user], [name=empresa-user]').css( 'border', '0px' );
 	$( this ).text( 'Editar Perfil' ).removeClass( 'inEdit' );
+});
+
+
+$(document).ready(function () {
+	$.datetimepicker.setLocale('es');
+
+	$('.datetime').datetimepicker({
+		timepicker:false,
+		format:'d M Y'
+
+	});
 });
 
 </script>
