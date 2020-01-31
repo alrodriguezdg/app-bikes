@@ -558,3 +558,8 @@ i.icon.play.circle:before{
 	color: #FFF !important; 
 	font-weight: 600 !important;
 }
+
+#alertUser{
+	color: red;
+	text-align: center;
+}

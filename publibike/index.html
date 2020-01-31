@@ -21,11 +21,12 @@
 			    <input type="text" name="user" placeholder="Usuario">
 			  </div>
 			  <div class="field">
-			    <input type="password" name="user" placeholder="Contraseña">
+			    <input type="password" name="pass" placeholder="Contraseña">
 			    <a href="#">¿Olvidaste tu contraseña?</a>
 			  </div>
 			  <div class="button-login">
-			  	<a href="main.html" class="ui button">INICIAR SESIÓN</a>
+			  	<p id="alertUser"></p>
+			  	<a onclick="validateUser()" class="ui button">INICIAR SESIÓN</a>
 			  </div>
 			</form>
 			<h4>O Conectate con</h4>
@@ -47,6 +48,22 @@
 <script type="text/javascript" src="../js/semantic.min.js"></script>
 
 <script type="text/javascript">
+
+function validateUser() {
+  var user, pass, text;
+
+  user = $( '[name=user]' ).val();
+  pass = $( '[name=pass]' ).val();
+  console.log( user, pass );
+
+  if ( user == "userbike" && pass == "123" ) {
+    window.location.replace("main.html");
+  } else {
+    text = "Usuario no Válido";
+  }
+  document.getElementById("alertUser").innerHTML = text;
+}
+
 
 $('.main-wrapper')
   .transition('scale')

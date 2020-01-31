@@ -513,7 +513,6 @@ function reset () {
 	}
 
 // Habilitar edicion perfil
-
 $( document ).on( 'click', '.edit-btn', function(){
 	$( this ).text( 'Guardar Perfil' ).addClass( 'inEdit' );
   $('[name=email-user], [name=empresa-user]').attr( 'disabled', false );
@@ -529,7 +528,7 @@ $( document ).on( 'click', '.inEdit', function(){
 	$( this ).text( 'Editar Perfil' ).removeClass( 'inEdit' );
 });
 
-
+// Mostrar calendario
 $(document).ready(function () {
 	$.datetimepicker.setLocale('es');
 
