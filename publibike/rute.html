@@ -73,7 +73,7 @@
 	          	<h4>Tiempo Recorrido</h4>
 	          </div>
 	          <div class="ten wide column">
-	          	<h2>00:40:20</h2>
+	          	<h2  id="time">00:00:00:00</h2>
 	          </div>
 	        </div>
 	        <div class="row">
@@ -95,7 +95,7 @@
 		        </div>
 		        <div class="column data-rute">
 		        	<h2>
-		        		$19.200
+		        		0
 		        	</h2>
 		        </div>
 		        <div class="column data-rute degrade-orange">
@@ -106,7 +106,7 @@
 		        </div>
 		        <div class="column data-rute">
 		        	<h2>
-		        		200<small>KM</small>
+		        		<span id="km">0</span><small>KM</small>
 		        	</h2>
 		        </div>
 		        <div class="column data-rute degrade-blue">
@@ -133,7 +133,8 @@
 		        </div>
 		    </div>
 	    <div class="content-button">
-		    <a class="ui button stop-activity" onclick="stop()">DETENER RECORRIDO</a>
+		    <a class="ui button begin-activity" id="start" onclick="start(), setInterval('sumarkm()',4000)">INICIAR RECORRIDO</a>
+		    <a class="ui button stop-activity" id="stop" onclick="stop(), setInterval('sumarkm()',4000)" style="display: none;">DETENER RECORRIDO </a>
 		</div>
 		<div class="ui modal">
 		  <div class="chrono">
@@ -207,11 +208,7 @@
 
 <script type="text/javascript">
 
-function stop() { 
-        $('.ui.modal')
-		  .modal('show')
-		;
-        }     
+ 
 function mostrar() {
     document.getElementById("sidebar-menu").style.width = "300px";
     document.getElementById("main-wrapper").style.left = "300px";
@@ -229,6 +226,83 @@ function ocultar() {
 $('.main-wrapper')
   .transition('scale')
 ;
+
+window.onload = function() {
+   pantalla = document.getElementById("time");
+   kmh = document.getElementById("kmh");
+   calorias = document.getElementById("calorias");
+   co2 = document.getElementById("co2");
+   maxspeed = document.getElementById("maxspeed");
+}
+var isMarch = false; 
+var acumularTime = 0;
+var km = 0;
+function start () {
+         if (isMarch == false) { 
+            timeInicial = new Date();
+            control = setInterval(cronometro,10);
+            isMarch = true;
+            document.getElementById("start").style.display = 'none';
+            document.getElementById("stop").style.display = 'block';
+            }
+         }
+function cronometro () { 
+         timeActual = new Date();
+         acumularTime = timeActual - timeInicial;
+         acumularTime2 = new Date();
+         acumularTime2.setTime(acumularTime); 
+         cc = Math.round(acumularTime2.getMilliseconds()/10);
+         ss = acumularTime2.getSeconds();
+         mm = acumularTime2.getMinutes();
+         hh = acumularTime2.getHours()-19;
+         if (cc < 10) {cc = "0"+cc;}
+         if (ss < 10) {ss = "0"+ss;} 
+         if (mm < 10) {mm = "0"+mm;}
+         if (hh < 10) {hh = "0"+hh;}
+         pantalla.innerHTML = hh+":"+mm+":"+ss+":"+cc;
+         }
+
+function stop () { 
+         if (isMarch == true) {
+            clearInterval(control);
+            isMarch = false;
+            document.getElementById("start").style.display = 'block';
+            document.getElementById("stop").style.display = 'none';
+            $('.ui.modal')
+			  .modal('show')
+			;
+            }     
+         }      
+
+function resume () {
+         if (isMarch == false) {
+            timeActu2 = new Date();
+            timeActu2 = timeActu2.getTime();
+            acumularResume = timeActu2-acumularTime;
+            
+            timeInicial.setTime(acumularResume);
+            control = setInterval(cronometro,10);
+            isMarch = true;
+            document.getElementById("start").style.display = 'none';
+            document.getElementById("stop").style.display = 'block';
+            }     
+         }
+
+function reset () {
+         if (isMarch == true) {
+            clearInterval(control);
+            isMarch = false;
+            }
+         acumularTime = 0;
+         pantalla.innerHTML = "00:00:00:00";
+         }
+	var km = 0;
+	function sumarkm() {
+	setInterval(3000);
+	  km += .1;
+	  // mostrar el valor de km
+	document.getElementById('km').innerHTML = Math.round(km*10)/10;
+	}
 
 </script>
 
