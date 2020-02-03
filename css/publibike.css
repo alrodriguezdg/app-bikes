@@ -114,6 +114,7 @@ img{
 .form-login a{
 	float: right;
 	color: #aaaaaa;
+	font-size: 16px !important;
 }
 
 .button-login{
@@ -149,6 +150,7 @@ img{
 
 .new-user a{
 	float: none;
+	font-size: 16px !important;
 }
 .logo-publibike-in{
 	text-align: center;
@@ -315,7 +317,7 @@ img{
 
 .welcome-main h4{
 	color: #fff;
-	font-weight: lighter;
+	font-size: 16px;
 	margin: 0;
 }
 
@@ -422,6 +424,8 @@ img{
 
 .column.campaing h4 small{
 	display: block;
+	font-size: 16px;
+	font-weight: lighter;
 }
 
 .title-publibike{
@@ -442,7 +446,7 @@ img{
 	content: "• ";
 	font-size: 45px;
 	display: inline-block;
-	margin-right: 10px;
+	margin-right: 11px;
 	vertical-align: middle;
 }
 
@@ -520,6 +524,8 @@ img{
 
 .begin-campaing h4 small{
 	display: block;
+	font-size: 16px;
+	font-weight: lighter;
 }
 
 .photo-campaing{
@@ -595,7 +601,7 @@ img{
 .content-profile ul li h4{
 	color: #fff;
 	margin: 0;
-	font-weight: lighter;
+	font-size: 16px;
 }
 
 .info-profile h2{
@@ -613,7 +619,7 @@ img{
 
 .data-profile.ui.grid>.column h4{
 	color: #fff;
-	font-size: 12px;
+	font-size: 16px;
 	margin-bottom: 0;
 	font-weight: lighter;
 }

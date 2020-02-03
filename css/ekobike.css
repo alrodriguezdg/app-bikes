@@ -172,7 +172,7 @@ img{
 .content-profile ul{
 	list-style: none;
 	padding: 0;
-	text-align: center;
+	text-align: left;
 }
 
 .content-profile ul li{
@@ -257,6 +257,7 @@ i.icon.play.circle:before{
 	color: #fff;
 	margin: 0;
 	margin: 0 0 5px 0;
+	font-size: 16px;
 }
 
 .data-profile, .content-activity{
@@ -264,9 +265,10 @@ i.icon.play.circle:before{
 }
 
 .data-profile h4, .content-activity h4{
-	font-weight: lighter;
+	font-weight: regular;
 	text-align: left;
 	color: #479946;
+	font-size: 16px;
 	margin-bottom: 0;
 }
 
@@ -284,22 +286,24 @@ i.icon.play.circle:before{
 
 .data-profile input::placeholder{
 	color: #fff !important;
+	font-size: 16px;
 }
 
 .btn-yellow{
 	background: #b39f40 !important;
 	color: #fff !important;
+	font-size: 16px;
 }
 
 .prize-profile h4{
 	color: #479946;
 	text-align: left;
 	margin-top: 10px;
-	font-weight: lighter;
+	font-size: 16px;
 }
 
 .prize-content{
-	text-align: center;
+	text-align: left;
 }
 
 .prize-content ul{
@@ -308,11 +312,11 @@ i.icon.play.circle:before{
 }
 
 .prize-content ul li {
-    width: 32%;
+    width: 49%;
     display: inline-block;
     padding: 10px;
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .prize-content ul li i{
@@ -329,14 +333,13 @@ i.icon.play.circle:before{
 }
 
 .prize-content.another h3 small{
-	float: right;
-	font-size: 12px;
-	font-weight: lighter;
 	vertical-align: middle;
 }
 
 .prize-content.another h3 small a{
 	color: #479946;
+	font-size: 16px;
+	display: block;
 }
 
 .prize-content.another ul li{
@@ -424,7 +427,7 @@ i.icon.play.circle:before{
 
 .historic h4{
 	color: #fff;
-	font-weight: lighter;
+	font-size: 16px;
 }
 .ui.celled.grid>.column:not(.row), .ui.celled.grid>.row>.column {
     -webkit-box-shadow: -1px 0 0 0 #479946;
@@ -439,6 +442,7 @@ i.icon.play.circle:before{
 
 .date-historic label{
 	color: #fff !important;
+	font-size: 16px !important;
 }
 
 .date-historic{
@@ -487,6 +491,7 @@ i.icon.play.circle:before{
 .content-play .distance h5{
 	color: #14805e;
 	margin-bottom: 0;
+	font-size: 16px;
 }
 
 .content-play .distance h3{
@@ -525,9 +530,8 @@ i.icon.play.circle:before{
 }
 
 .chrono h4{
-	font-size: 14px;
+	font-size: 16px;
 	color: #14805e;
-	font-weight: lighter;
 	margin: 0;
 }
 
@@ -562,4 +566,8 @@ i.icon.play.circle:before{
 #alertUser{
 	color: red;
 	text-align: center;
+}
+
+.data-profile.ui[class*="two column"].grid>.column:not(.row), .data-profile.ui[class*="two column"].grid>.row>.column{
+	width: 100% !important;
 }
