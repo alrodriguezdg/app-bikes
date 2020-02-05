@@ -225,6 +225,11 @@ img{
     
 }
 
+.ui.form select{
+	color: #fff !important;
+	font-size: 20px;
+}
+
 #sidebar-menu a:hover{
     color:#f9b410;
     background-color: #001434;
