@@ -95,18 +95,18 @@ img{
 }
 
 .header-index .logo-publibike{
-	max-width: 180px;
+	max-width: 150px;
 	margin-top: -100px;
 }
 
 .form-login input{
 	background-color: transparent !important;
-	border-bottom: 1px solid #e6de00 !important;
+	border-bottom: 1px solid #f9b410 !important;
 	color: #fff !important;
 }
 
 .form-login input::placeholder{
-	color: #e6de00 !important;
+	color: #f9b410 !important;
 	font-size: 18px !important;
 
 }
@@ -124,12 +124,12 @@ img{
 }
 
 .button-login .button{
-	background-color: #e6de00;
+	background-color: #f9b410;
 	width: 100%;
 }
 
 .form-login h4{
-	color: #e6de00;
+	color: #f9b410;
 	margin-top: 20px;
 	text-align: center;
 	font-weight: lighter;
@@ -157,7 +157,7 @@ img{
 }
 
 .logo-publibike-in img{
-	max-width: 120px;
+	max-width: 100px;
 }
 
 .header-inside ul{
@@ -171,7 +171,7 @@ img{
 }
 
 .header-inside ul li i{
-	color: #e6de00;
+	color: #f9b410;
 	font-size: 30px;
 }
 
@@ -194,14 +194,14 @@ img{
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: #e6de00;
+    background-color: #f9b410;
     overflow-x: hidden;
     transition: 0.4s;
     box-sizing: border-box;
 }
 
 #sidebar-menu img{
-	max-width: 120px;
+	max-width: 100px;
 }
 
 #sidebar-menu ul, #sidebar-menu li{
@@ -226,7 +226,7 @@ img{
 }
 
 #sidebar-menu a:hover{
-    color:#e6de00;
+    color:#f9b410;
     background-color: #001434;
 }
 
@@ -312,7 +312,7 @@ img{
 }
 
 .welcome-main h2{
-	color: #e6de00;
+	color: #f9b410;
 }
 
 .welcome-main h4{
@@ -386,7 +386,7 @@ img{
 }
 
 .chrono .four{
-	border-right: 1px solid #e6de00;
+	border-right: 1px solid #f9b410;
 }
 
 .data-rute{
@@ -438,7 +438,7 @@ img{
 }
 
 .title-campaing{
-	color: #e6de00;
+	color: #f9b410;
 	font-weight: lighter;
 }
 
@@ -540,7 +540,7 @@ img{
 }
 
 .title-rute{
-	color: #e6de00;
+	color: #f9b410;
 	text-align: center;
 }
 
@@ -558,11 +558,11 @@ img{
 }
 
 .table-routes .row{
-	border-bottom: 1px solid #e6de00;
+	border-bottom: 1px solid #f9b410;
 }
 
 .table-routes .header-table div{
-	color: #e6de00;
+	color: #f9b410;
 }
 
 .route-column{
@@ -593,7 +593,7 @@ img{
 }
 
 .content-profile ul li h2{
-	color: #e6de00;
+	color: #f9b410;
 	font-size: 20px;
 	margin: 0;
 }
@@ -605,7 +605,7 @@ img{
 }
 
 .info-profile h2{
-	color: #e6de00;
+	color: #f9b410;
 }
 
 .data-profile.ui.grid>.column:not(.row), .data-profile.ui.grid>.row>.column{
@@ -614,7 +614,7 @@ img{
 
 .data-profile.ui.grid>.column:not(.row) input, .data-profile.ui.grid>.row>.column input, .data-profile.ui.grid>.column:not(.row) select, .data-profile.ui.grid>.row>.column select{
 	background-color: transparent !important;
-	border-bottom: 1px solid #e6de00 !important;
+	border-bottom: 1px solid #f9b410 !important;
 }
 
 .data-profile.ui.grid>.column h4{
