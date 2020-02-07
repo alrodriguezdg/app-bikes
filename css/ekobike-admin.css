@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+
+h1, h2, h3, h4, h5, h6, p, a, li, input, button{
+	font-family: 'Roboto', sans-serif !important;
+
+}
+
+.wrapper{
+	width: calc(100% - 260px);
+	background-color: #f0efef !important;
+}
+
+.ui.inverted.menu{
+	background-color: #14805e !important;
+}
+
+.logo-ekobike{
+	text-align: center;
+}
+
+.logo-ekobike img{
+	max-width: 180px;
+}
+
+.ui.secondary.menu{
+	background-color: #fff;
+	padding: 20px;
+}
+
+.ui.secondary.menu h3{
+	font-size: 30px;
+    margin-bottom: 0;
+    line-height: 100%;
+    color: #1f355d;
+    margin: 10px;
+}
+
+.content{
+	padding: 10px 20px !important;
+	margin-top: 0 !important;
+}
+
+.content .inside-column{
+	background-color: #fff;
+	padding: 20px;
+	margin: 10px 0;
+}
+
+.tabla-ekobike thead{
+	background-color: #14805e;
+	color: #fff;
+}
+
+.tabla-ekobike thead th{
+	color: #fff !important;
+    text-transform: uppercase !important;
+    padding: 10px !important;
+    font-size: 16px;
+}
+
+.tabla-ekobike td{
+	padding: 10px !important;
+	font-size: 16px;
+}
+
+.content .inside-column h3{
+	color: #1f355d;
+	font-size: 18px;
+	margin-bottom: 20px;
+    }
+
+.statistics .data-statistics{
+	width: 30%;
+	display: inline-block;
+	padding: 5px 20px;
+	font-size: 16px;
+}
+
+.statistics .graphic-statistics{
+	width: 70%;
+	padding: 5px 20px;
+}
+
+.ui.progress{
+	background-color: transparent;
+}
+
+.content-activity{
+	text-align: center !important;
+}
+
+.content-activity .column{
+	border-bottom: 1px solid #479946;
+}
+
+
+.content-activity > h2{
+	margin-top: 20px;
+	color: #1f355d;
+	display: inline-block;
+    width: 100%;
+}
+
+.content-activity h4{
+	color: #479946;
+	font-weight: lighter;
+}
+
+.data-activity{
+	text-align: center;
+}
+
+.data-activity h3, .data-activity h5{
+	color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.data-activity h3{
+	font-size: 40px !important;
+}
+
+.data-activity h5{
+	font-size: 20px;
+	font-weight: lighter;
+	color: #b39f40;
+}
+
+.user-data h4{
+	font-size: 18px;
+}
+
+.user-data small{
+	display: block;
+	font-weight: lighter;
+}
