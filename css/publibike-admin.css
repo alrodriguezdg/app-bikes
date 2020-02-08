@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
-/*****ICONOS EKOBIKE*****/
+/******ICONS PUBLIBIKE******/
 
 @font-face {
-  font-family: 'app_ekobike';
-  src:  url('../fonts/app_ekobike.eot?wf75sx');
-  src:  url('../fonts/app_ekobike.eot?wf75sx#iefix') format('embedded-opentype'),
-    url('../fonts/app_ekobike.ttf?wf75sx') format('truetype'),
-    url('../fonts/app_ekobike.woff?wf75sx') format('woff'),
-    url('../fonts/app_ekobike.svg?wf75sx#app_ekobike') format('svg');
+  font-family: 'app_publibike';
+  src:  url('../fonts/app_publibike.eot?wbps9m');
+  src:  url('../fonts/app_publibike.eot?wbps9m#iefix') format('embedded-opentype'),
+    url('../fonts/app_publibike.ttf?wbps9m') format('truetype'),
+    url('../fonts/app_publibike.woff?wbps9m') format('woff'),
+    url('../fonts/app_publibike.svg?wbps9m#app_publibike') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -16,7 +16,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'app_ekobike' !important;
+  font-family: 'app_publibike' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -29,38 +29,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-briefcase:before {
-  content: "\e015";
+.icon-home3:before {
+  content: "\e902";
 }
-.icon-wallet:before {
-  content: "\e016";
-}
-.icon-gift:before {
-  content: "\e017";
-}
-.icon-trophy:before {
-  content: "\e023";
+.icon-camera:before {
+  content: "\e90f";
 }
 .icon-map:before {
-  content: "\e025";
+  content: "\e94b";
 }
-.icon-basket:before {
-  content: "\e027";
+.icon-calendar:before {
+  content: "\e953";
 }
-.icon-pricetags:before {
-  content: "\e02f";
+.icon-user:before {
+  content: "\e971";
 }
-.icon-tools-2:before {
-  content: "\e034";
+.icon-search:before {
+  content: "\e986";
 }
-.icon-linegraph:before {
-  content: "\e039";
+.icon-lock:before {
+  content: "\e98f";
 }
-.icon-profile-male:before {
-  content: "\e040";
+.icon-stats-dots:before {
+  content: "\e99b";
 }
-.icon-bike:before {
-  content: "\e042";
+.icon-stats-bars:before {
+  content: "\e99c";
+}
+.icon-switch:before {
+  content: "\e9b6";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-cross:before {
+  content: "\ea0f";
 }
 
 
@@ -85,14 +91,14 @@ body{
 }
 
 .ui.inverted.menu{
-	background-color: #14805e !important;
+	background-color: #001434 !important;
 }
 
-.logo-ekobike{
+.logo-publibike{
 	text-align: center;
 }
 
-.logo-ekobike img{
+.logo-publibike img{
 	max-width: 180px;
 }
 
@@ -115,31 +121,31 @@ body{
 }
 
 .content .inside-column{
-	background-color: #fff;
+	background-color: transparent;
 	padding: 20px;
 	margin: 0;
 }
 
-.tabla-ekobike thead{
-	background-color: #14805e;
+.tabla-publibike thead{
+	background-color: #001434;
 	color: #fff;
 }
 
-.tabla-ekobike thead th{
+.tabla-publibike thead th{
 	color: #fff !important;
     text-transform: uppercase !important;
     padding: 10px !important;
     font-size: 16px;
 }
 
-.tabla-ekobike td{
+.tabla-publibike td{
 	padding: 10px !important;
 	font-size: 16px;
 }
 
 .content .inside-column h3{
 	color: #1f355d;
-	font-size: 18px;
+	font-size: 20px;
 	margin-bottom: 0px;
     }
 
@@ -222,7 +228,7 @@ body{
 }
 
 .ui[class*="three column"].grid>.column:not(.row), .ui[class*="three column"].grid>.row>.column{
-	width: calc(33% - 23px);
+	width: calc(33% - 25px);
 }
 
 .ui[class*="two column"].grid>.column:not(.row), .ui[class*="two column"].grid>.row>.column{
@@ -240,11 +246,11 @@ body{
 
 #rutas .ui.secondary.menu .item{
 	background-color:  #f0efef;
-	color: #479946;
+	color: #001434;
 }
 
 #rutas .ui.secondary.menu .item.active{
-	background-color:  #479946;
+	background-color:  #001434;
 	color: #f0efef;
 }
 
@@ -259,35 +265,117 @@ body{
 	color: #479946 !important;
 }
 
-.prize-content{
-	text-align: left;
+.column.campaing{
+	background-color: #fff;
+	margin: 5px;
+	padding: 10px;
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #ddd;
+}
+.column.campaing h4{
+	margin: 10px 0px;
+	color: #001434;
 }
 
-.prize-content ul{
-	list-style: none;
-	padding: 0;
-}
-
-.prize-content ul li {
-    display: inline-block;
-    padding: 20px;
-    color: #479946;
-    font-size: 16px;
-    text-align: center;
-}
-
-.prize-content ul li i{
-	font-size: 45px;
-	color: #b39f40;
+.column.campaing h4 small{
 	display: block;
-	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: lighter;
 }
 
-.prize-content.another ul li{
-	opacity: .5;
+.state-campaing h3:before{
+	content: "• ";
+	font-size: 45px;
+	display: inline-block;
+	margin-right: 11px;
+	vertical-align: middle;
 }
 
-@media screen and (max-width: 1330px){
+.state-campaing h3{
+	margin: 0;
+	font-size: 12px !important;
+	text-transform: uppercase;
+}
+
+.state-campaing.active, .state-campaing.active h3{
+	color: #4a9a00 !important;
+}
+
+.state-campaing.no-disponible,.state-campaing.no-disponible h3{
+	color: #8e8e8e !important;
+}
+
+.warning-date, .warning-date h3{
+	color: #d72024 !important;
+}
+
+.warning-quotas, .warning-quotas h3{
+	color: #f1a30c !important;
+}
+
+.logo-campaing{
+	text-align: center;
+	width: 100%;
+}
+
+.data-main{
+	text-align: center;
+	padding: 40px;
+	background-color: gray;
+	color: #fff;
+	margin: 5px;
+	width: 47% !important;
+	display: inline-block !important;
+}
+
+.data-main i{
+	font-size: 30px;
+}
+
+.data-main h4{
+	font-weight: lighter;
+	margin: 0;
+	font-size: 16px;
+}
+
+.data-main h2{
+	font-size: 25px;
+	margin: 0;
+}
+
+.degrade-green{
+	background: rgb(0,106,15);
+	background: linear-gradient(90deg, rgba(0,106,15,1) 0%, rgba(141,201,53,1) 100%);
+}
+
+.degrade-orange{
+	background: rgb(254,52,44);
+	background: linear-gradient(90deg, rgba(254,52,44,1) 0%, rgba(253,201,53,1) 100%);
+}
+
+.degrade-blue{
+	background: rgb(1,74,253);
+	background: linear-gradient(90deg, rgba(1,74,253,1) 0%, rgba(16,202,215,1) 100%);
+}
+
+.degrade-violet{
+	background: rgb(164,0,212);
+	background: linear-gradient(90deg, rgba(164,0,212,1) 0%, rgba(106,0,148,1) 100%);
+}
+
+.titulos-campanas{
+	text-align: center;
+}
+
+
+.titulos-campanas h4{
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1124px){
 	.column{
 		width: 100% !important;
 	}
@@ -325,7 +413,7 @@ body{
 		font-size: 20px;
 	}
 
-	.menu-side .logo-ekobike img{
+	.menu-side .logo-publibike img{
 		max-width: 90px !important;
 		vertical-align: middle;
 	}
