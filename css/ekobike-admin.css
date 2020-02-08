@@ -1,14 +1,87 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
+/*****ICONOS EKOBIKE*****/
+
+@font-face {
+  font-family: 'app_ekobike';
+  src:  url('../fonts/app_ekobike.eot?wf75sx');
+  src:  url('../fonts/app_ekobike.eot?wf75sx#iefix') format('embedded-opentype'),
+    url('../fonts/app_ekobike.ttf?wf75sx') format('truetype'),
+    url('../fonts/app_ekobike.woff?wf75sx') format('woff'),
+    url('../fonts/app_ekobike.svg?wf75sx#app_ekobike') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app_ekobike' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-briefcase:before {
+  content: "\e015";
+}
+.icon-wallet:before {
+  content: "\e016";
+}
+.icon-gift:before {
+  content: "\e017";
+}
+.icon-trophy:before {
+  content: "\e023";
+}
+.icon-map:before {
+  content: "\e025";
+}
+.icon-basket:before {
+  content: "\e027";
+}
+.icon-pricetags:before {
+  content: "\e02f";
+}
+.icon-tools-2:before {
+  content: "\e034";
+}
+.icon-linegraph:before {
+  content: "\e039";
+}
+.icon-profile-male:before {
+  content: "\e040";
+}
+.icon-bike:before {
+  content: "\e042";
+}
+
 
 h1, h2, h3, h4, h5, h6, p, a, li, input, button{
 	font-family: 'Roboto', sans-serif !important;
 
 }
 
+body{
+	background-color: #f0efef
+}
+
 .wrapper{
-	width: calc(100% - 260px);
-	background-color: #f0efef !important;
+	width: calc(100% - 254px);
+}
+
+.menu-side{
+	position: fixed;
+	height: 100%;
+	border-radius: 0 !important;
+	width: 254px !important;
 }
 
 .ui.inverted.menu{
@@ -44,7 +117,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, input, button{
 .content .inside-column{
 	background-color: #fff;
 	padding: 20px;
-	margin: 10px 0;
+	margin: 0;
 }
 
 .tabla-ekobike thead{
@@ -67,7 +140,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, input, button{
 .content .inside-column h3{
 	color: #1f355d;
 	font-size: 18px;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
     }
 
 .statistics .data-statistics{
@@ -80,6 +153,10 @@ h1, h2, h3, h4, h5, h6, p, a, li, input, button{
 .statistics .graphic-statistics{
 	width: 70%;
 	padding: 5px 20px;
+}
+
+.statistics h3{
+	margin-bottom: 20px !important;
 }
 
 .ui.progress{
@@ -105,6 +182,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, input, button{
 .content-activity h4{
 	color: #479946;
 	font-weight: lighter;
+	font-size: 16px;
 }
 
 .data-activity{
@@ -135,4 +213,76 @@ h1, h2, h3, h4, h5, h6, p, a, li, input, button{
 .user-data small{
 	display: block;
 	font-weight: lighter;
+}
+
+.content > .column{
+	padding: 0 !important;
+	margin: 1em;
+	background-color: #fff;
+}
+
+.ui[class*="three column"].grid>.column:not(.row), .ui[class*="three column"].grid>.row>.column{
+	width: calc(33% - 23px);
+}
+
+.ui[class*="two column"].grid>.column:not(.row), .ui[class*="two column"].grid>.row>.column{
+	width: calc(50% - 28px);
+}
+
+.ui.progress{
+	margin: 15px 0;
+}
+
+#rutas .ui.secondary.menu{
+	text-align: center;
+	padding: 0;
+}
+
+#rutas .ui.secondary.menu .item{
+	background-color:  #f0efef;
+	color: #479946;
+}
+
+#rutas .ui.secondary.menu .item.active{
+	background-color:  #479946;
+	color: #f0efef;
+}
+
+.date-rute{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.date-rute h3{
+	font-size: 32px !important;
+	color: #479946 !important;
+}
+
+.prize-content{
+	text-align: left;
+}
+
+.prize-content ul{
+	list-style: none;
+	padding: 0;
+}
+
+.prize-content ul li {
+    display: inline-block;
+    padding: 20px;
+    color: #479946;
+    font-size: 16px;
+    text-align: center;
+}
+
+.prize-content ul li i{
+	font-size: 45px;
+	color: #b39f40;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.prize-content.another ul li{
+	opacity: .5;
 }

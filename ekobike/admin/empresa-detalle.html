@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EkoBike - En bici creamos un mundo mejor</title>
+	<link rel="stylesheet" type="text/css" href="../../css/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/ekobike-admin.css">
+</head>
+<body>
+	<div class="ui visible inverted left vertical sidebar menu menu-side">
+	  	<div class="logo-ekobike">
+			<a href="dashboard.html">
+				<img src="../../img/logo-ekobike.png">
+			</a>
+		</div>
+	    <a class="item" href="dashboard.html">
+	      <i class="home icon"></i>
+	      Dashboard
+	    </a>
+	    <a class="item" href="usuarios.html">
+	      <i class="user circle outline layout icon"></i>
+	      Usuarios Registrados
+	    </a>
+	    <a class="item">
+	      <i class="building outline icon"></i>
+	      Empresas Registradas
+	    </a>
+	  </div>
+	  <div class="wrapper pusher">
+	  	<div class="ui secondary menu">
+		  <h3>
+		    Empresa: Bancolombia
+		  </h3>
+		  <div class="right menu">
+		    <div class="item">
+		      <div class="ui icon input">
+		        <input type="text" placeholder="Buscar...">
+		        <i class="search link icon"></i>
+		      </div>
+		    </div>
+		    <a class="ui item" href="index.html">
+		      Cerrar Sesión
+		    </a>
+		  </div>
+		</div>
+	    <div class="ui two column grid content">
+		    <div class="column">
+		    	<div class="inside-column">
+		    		<h3>Usuarios Registrados en Empresa</h3>
+			      <table class="ui very basic table tabla-ekobike">
+			        <thead>
+			          <tr><th>Nombre</th>
+			          <th>Usuario</th>
+			          <th>Email</th>
+			        </tr></thead>
+			        <tbody>
+			          <tr>
+			            <td>Julian Paez</td>
+			            <td><a href="usuario-detalle.html">1014258693</a></td>
+			            <td>Julian@123.com</td>
+			          </tr>
+			          <tr>
+			            <td>David Contreras</td>
+			            <td><a href="usuario-detalle.html">1258479853</a></td>
+			            <td>David@123.com</td>
+			          </tr>
+			          <tr>
+			            <td>Guillermo Abello</td>
+			            <td><a href="usuario-detalle.html">1035698742</a></td>
+			            <td>Guillermo@123.com</td>
+			          </tr>
+			          <tr>
+			            <td>Diego Correa</td>
+			            <td><a href="usuario-detalle.html">75689758</a></td>
+			            <td>Diego@123.com</td>
+			          </tr>
+			          <tr>
+			            <td>Julian Paez</td>
+			            <td><a href="usuario-detalle.html">1014258693</a></td>
+			            <td>Julian@123.com</td>
+			          </tr>
+			          <tr>
+			            <td>David Contreras</td>
+			            <td><a href="usuario-detalle.html">1258479853</a></td>
+			            <td>David@123.com</td>
+			          </tr>
+			          <tr>
+			            <td>Guillermo Abello</td>
+			            <td><a href="usuario-detalle.html">1035698742</a></td>
+			            <td>Guillermo@123.com</td>
+			          </tr>
+			          <tr>
+			        </tbody>
+			      </table>
+			    </div>
+		    </div>
+		    <div class="column">
+		    	<div class="inside-column">
+		    		<h3>Resultados Generales</h3>
+		    		<div style="width:100%;">
+						<canvas id="coResultados"></canvas>
+					</div>
+			    </div>
+		    </div>
+		</div>
+		<div class="ui one column grid content user-data">
+		    <div class="column">
+		    	<div class="inside-column">
+		    		<h3>
+		    			Reconocimientos para Usuarios
+		    		</h3>
+		    		<div class="prize-content">
+						<ul>
+							<li>
+								<i class="icon-tools-2"></i>
+								Mantenimiento
+							</li>
+							<li>
+								<i class="icon-basket"></i>
+								Mercado
+							</li>
+							<li>
+								<i class="icon-briefcase"></i>
+								Viaje
+							</li>
+							<li>
+								<i class="icon-tools-2"></i>
+								Mantenimiento
+							</li>
+							<li>
+								<i class="icon-basket"></i>
+								Mercado
+							</li>
+							<li>
+								<i class="icon-briefcase"></i>
+								Viaje
+							</li>
+							<li>
+								<i class="icon-tools-2"></i>
+								Mantenimiento
+							</li>
+							<li>
+								<i class="icon-basket"></i>
+								Mercado
+							</li>
+							<li>
+								<i class="icon-briefcase"></i>
+								Viaje
+							</li>
+							<li>
+								<i class="icon-tools-2"></i>
+								Mantenimiento
+							</li>
+							<li>
+								<i class="icon-basket"></i>
+								Mercado
+							</li>
+							<li>
+								<i class="icon-briefcase"></i>
+								Viaje
+							</li>
+							<li>
+								<i class="icon-tools-2"></i>
+								Mantenimiento
+							</li>
+							<li>
+								<i class="icon-basket"></i>
+								Mercado
+							</li>
+							<li>
+								<i class="icon-briefcase"></i>
+								Viaje
+							</li>
+							<li>
+								<i class="icon-tools-2"></i>
+								Mantenimiento
+							</li>
+							<li>
+								<i class="icon-basket"></i>
+								Mercado
+							</li>
+							<li>
+								<i class="icon-briefcase"></i>
+								Viaje
+							</li>
+						</ul>	
+					</div>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.3.js" type="text/javascript"></script>
+<script src="https://jqueryui.com/jquery-wp-content/themes/jquery/js/plugins.js"></script>
+<script src="https://jqueryui.com/jquery-wp-content/themes/jquery/js/main.js"></script>
+<script type="text/javascript" src="../../js/semantic.min.js"></script>
+<script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+
+<script>
+
+	$('#resultados .menu .item')
+	  .tab({
+	    // special keyword works same as above
+	    context: 'parent'
+	  })
+	;
+
+	/*GRÁFICA CO2*/
+
+	var MONTHS = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+		var config = {
+			type: 'line',
+			data: {
+				labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+				datasets: [{
+					label: 'CO2 Reducido',
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor()
+					],
+					fill: false,
+				}, {
+					label: 'Kilometros Recorridos',
+					fill: false,
+					backgroundColor: window.chartColors.blue,
+					borderColor: window.chartColors.blue,
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor()
+					],
+				}, {
+					label: 'Calorías Reducidas',
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor()
+					],
+					fill: false,
+				}]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: ' '
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					x: {
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Month'
+						}
+					},
+					y: {
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Value'
+						}
+					}
+				}
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('coResultados').getContext('2d');
+			window.myLine = new Chart(ctx, config);
+		};
+
+		document.getElementById('randomizeData').addEventListener('click', function() {
+			config.data.datasets.forEach(function(dataset) {
+				dataset.data = dataset.data.map(function() {
+					return randomScalingFactor();
+				});
+
+			});
+
+			window.myLine.update();
+		});
+
+		var colorNames = Object.keys(window.chartColors);
+		document.getElementById('addDataset').addEventListener('click', function() {
+			var colorName = colorNames[config.data.datasets.length % colorNames.length];
+			var newColor = window.chartColors[colorName];
+			var newDataset = {
+				label: 'Dataset ' + config.data.datasets.length,
+				backgroundColor: newColor,
+				borderColor: newColor,
+				data: [],
+				fill: false
+			};
+
+			for (var index = 0; index < config.data.labels.length; ++index) {
+				newDataset.data.push(randomScalingFactor());
+			}
+
+			config.data.datasets.push(newDataset);
+			window.myLine.update();
+		});
+
+		document.getElementById('addData').addEventListener('click', function() {
+			if (config.data.datasets.length > 0) {
+				var month = MONTHS[config.data.labels.length % MONTHS.length];
+				config.data.labels.push(month);
+
+				config.data.datasets.forEach(function(dataset) {
+					dataset.data.push(randomScalingFactor());
+				});
+
+				window.myLine.update();
+			}
+		});
+
+		document.getElementById('removeDataset').addEventListener('click', function() {
+			config.data.datasets.splice(0, 1);
+			window.myLine.update();
+		});
+
+		document.getElementById('removeData').addEventListener('click', function() {
+			config.data.labels.splice(-1, 1); // remove the label first
+
+			config.data.datasets.forEach(function(dataset) {
+				dataset.data.pop();
+			});
+
+			window.myLine.update();
+		});
+
+</script>
+
+</html>

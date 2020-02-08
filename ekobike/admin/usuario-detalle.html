@@ -8,10 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="../../css/ekobike-admin.css">
 </head>
 <body>
-	<div class="ui bottom attached segment pushable">
-	  <div class="ui visible inverted left vertical sidebar menu">
+	<div class="ui visible inverted left vertical sidebar menu menu-side">
 	  	<div class="logo-ekobike">
-			<a href="../dashboard.html">
+			<a href="dashboard.html">
 				<img src="../../img/logo-ekobike.png">
 			</a>
 		</div>
@@ -19,11 +18,11 @@
 	      <i class="home icon"></i>
 	      Dashboard
 	    </a>
-	    <a class="item" href="usuario.html">
+	    <a class="item" href="usuarios.html">
 	      <i class="user circle outline layout icon"></i>
 	      Usuarios Registrados
 	    </a>
-	    <a class="item">
+	    <a class="item" href="empresas.html">
 	      <i class="building outline icon"></i>
 	      Empresas Registradas
 	    </a>
@@ -31,7 +30,7 @@
 	  <div class="wrapper pusher">
 	  	<div class="ui secondary menu">
 		  <h3>
-		    Datos del Usuario: <small>1014258693</small>
+		    Datos del Usuario: 1014258693
 		  </h3>
 		  <div class="right menu">
 		    <div class="item">
@@ -40,7 +39,7 @@
 		        <i class="search link icon"></i>
 		      </div>
 		    </div>
-		    <a class="ui item">
+		    <a class="ui item" href="index.html">
 		      Cerrar Sesión
 		    </a>
 		  </div>
@@ -62,7 +61,7 @@
 		    	</div>
 		    </div>
 		</div>
-	    <div class="ui three column grid content">
+	    <div class="ui three column equal height grid content">
 		    <div class="column">
 		    	<div class="inside-column">
 		    		<div class="content-activity ui one column grid">
@@ -70,6 +69,9 @@
 		    				Ultimo recorrido realizado
 		    			</h2>
 		    			<div class="ui internally celled grid historic">
+		    				<div class="date-rute">
+		    					<h3>18 Ene 2020</h3>
+		    				</div>
 					        <div class="row">
 					          	<div class="six wide column">
 					          		<h4>Kilometros Recorridos</h4>
@@ -126,7 +128,7 @@
 		    </div>
 		    <div class="column">
 		    	<div class="inside-column">
-		    		<div class="content-activity ui two column grid">
+		    		<div class="content-activity ui one column grid">
 		    			<h2>
 		    				Resultados Actividad General
 		    			</h2>
@@ -188,7 +190,7 @@
 						    <a class="item active" data-tab="sevendays">Últimos 7 Días</a>
 						    <a class="item" data-tab="lastmonth">Último Mes</a>
 						  </div>
-						  <div class="ui active tab segment" data-tab="sevendays">
+						  <div class="ui active tab" data-tab="sevendays">
 						    <div class="top attached ui statistics">
 						      	<div class="data-statistics">
 						        	<h3>Corredor Recorrido</h3>
@@ -224,21 +226,21 @@
 						        	R19 - Tc.	Calle 26
 						        </div>
 						        <div class="ui progress blue graphic-statistics" data-percent="100">
-						          <div class="bar" style="transition-duration: 300ms; width: 40%;">
-						            <div class="progress">40 mins</div>
-						          </div>
+							        <div class="bar" style="transition-duration: 300ms; width: 40%;">
+							        	<div class="progress">40 mins</div>
+							        </div>
 						        </div>
 						        <div class="data-statistics">
 						        	R22 - Tc.	Avenida Jiménez
 						        </div>
 						        <div class="ui progress green graphic-statistics" data-percent="100">
-						          <div class="bar" style="transition-duration: 300ms; width: 30%;">
-						            <div class="progress">30 mins</div>
-						          </div>
+						          	<div class="bar" style="transition-duration: 300ms; width: 30%;">
+						            	<div class="progress">30 mins</div>
+						          	</div>
 						        </div>
-						      </div>
-						  </div>
-						  <div class="ui tab segment" data-tab="lastmonth">
+						    </div>
+						</div>
+						<div class="ui tab" data-tab="lastmonth">
 						    <div class="top attached ui statistics">
 						      	<div class="data-statistics">
 						        	<h3>Corredor Recorrido</h3>
@@ -281,18 +283,42 @@
 						        <div class="data-statistics">
 						        	R22 - Tc.	Avenida Jiménez
 						        </div>
-						        <div class="ui progress green graphic-statistics" data-percent="100">
-						          <div class="bar" style="transition-duration: 300ms; width: 30%;">
-						            <div class="progress">30 mins</div>
-						          </div>
-						        </div>
-						      </div>
-						  </div>
-						</div>
-			    </div>
+					        	<div class="ui progress green graphic-statistics" data-percent="100">
+					          		<div class="bar" style="transition-duration: 300ms; width: 30%;">
+					            		<div class="progress">30 mins</div>
+				            		</div>
+				        		</div>
+				      		</div>
+				  		</div>
+					</div>
+		    	</div>
+	    	</div>
+	  	</div>
+	  	<div class="ui one column grid content user-data">
+		    <div class="column">
+		    	<div class="inside-column">
+		    		<h3>
+		    			Reconocimientos del Usuario
+		    		</h3>
+		    		<div class="prize-content">
+						<ul>
+							<li>
+								<i class="icon-tools-2"></i>
+								Mantenimiento
+							</li>
+							<li>
+								<i class="icon-basket"></i>
+								Mercado
+							</li>
+							<li>
+								<i class="icon-briefcase"></i>
+								Viaje
+							</li>
+						</ul>	
+					</div>
+		    	</div>
 		    </div>
-		  </div>
-	  </div>
+		</div>
 	</div>
 </body>
 
