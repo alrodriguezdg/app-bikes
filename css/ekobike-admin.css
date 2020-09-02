@@ -85,7 +85,7 @@ body{
 }
 
 .ui.inverted.menu{
-	background-color: #14805e !important;
+	background-color: #001434 !important;
 }
 
 .logo-ekobike{
@@ -121,7 +121,7 @@ body{
 }
 
 .tabla-ekobike thead{
-	background-color: #14805e;
+	background-color: #001434;
 	color: #fff;
 }
 
@@ -168,7 +168,7 @@ body{
 }
 
 .content-activity .column{
-	border-bottom: 1px solid #479946;
+	border-bottom: 1px solid #001434;
 }
 
 
@@ -180,7 +180,7 @@ body{
 }
 
 .content-activity h4{
-	color: #479946;
+	color: #001434;
 	font-weight: lighter;
 	font-size: 16px;
 }
@@ -203,7 +203,7 @@ body{
 .data-activity h5{
 	font-size: 20px;
 	font-weight: lighter;
-	color: #b39f40;
+	color: #f9b410;
 }
 
 .user-data h4{
@@ -240,11 +240,11 @@ body{
 
 #rutas .ui.secondary.menu .item{
 	background-color:  #f0efef;
-	color: #479946;
+	color: #001434;
 }
 
 #rutas .ui.secondary.menu .item.active{
-	background-color:  #479946;
+	background-color:  #001434;
 	color: #f0efef;
 }
 
@@ -256,7 +256,7 @@ body{
 
 .date-rute h3{
 	font-size: 32px !important;
-	color: #479946 !important;
+	color: #001434 !important;
 }
 
 .prize-content{
@@ -271,14 +271,14 @@ body{
 .prize-content ul li {
     display: inline-block;
     padding: 20px;
-    color: #479946;
+    color: #001434;
     font-size: 16px;
     text-align: center;
 }
 
 .prize-content ul li i{
 	font-size: 45px;
-	color: #b39f40;
+	color: #f9b410;
 	display: block;
 	margin-bottom: 10px;
 }

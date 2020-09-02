@@ -37,7 +37,7 @@
 
 	.contenedor-ekobike img, .contenedor-publibike img{
 		max-width: 150px;
-		padding: 50px;
+		padding: 50px 50px 0px 50px;
 		margin-top: 10%;
 	}
 	.contenedor-ekobike{
@@ -51,17 +51,17 @@
 		max-height: 50%;
 		width: 100%;
 	}
-	.contenedor-publibike a{
-		background-color: #e6de00;
+	.contenedor-publibike a, .contenedor-ekobike a{
+		background-color: #f9b410;
 		padding: 10px 20px;
 		color: #001434;
 	}
-	.contenedor-ekobike a{
-		background-color: #b39f40;
-		padding: 10px 20px;
-		color: #fff;
-		border-radius: 50px;
+
+	.contenedor-publibike h3, .contenedor-ekobike h3{
+		color: #f9b410;
+		margin-top: 0;
 	}
+
 	.contenedor-publibike{
 		background: url(img/background-publibike.jpg) no-repeat;
 		background-size: cover !important;
@@ -83,13 +83,15 @@
 	<div class="contenedor">
 		 <div class="contenedor-ekobike">
 		   	<div class="logo-ekobike">
-				<img src="img/logo-ekobike.png">
+				<img src="img/logo-publibike.png">
+				<h3>Marca</h3>
 			</div>
 			<a href="ekobike/index.html">VER APP</a>
 		</div>
 		<div class="contenedor-publibike">
 		   	<div class="logo-publibike">
 				<img src="img/logo-publibike.png">
+				<h3>Colaborador</h3>
 			</div>
 			<a href="publibike/index.html">VER APP</a>
 		</div>
